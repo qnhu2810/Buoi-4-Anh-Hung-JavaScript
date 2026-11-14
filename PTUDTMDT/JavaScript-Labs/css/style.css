@@ -1,0 +1,203 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #263247;
+    text-align: center;
+}
+
+header {
+    background: #253d72;
+    color: white;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+.profile {
+    background: white;
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 35px 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #dce5ff;
+}
+
+.profile a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background: #253d72;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.profile a:hover {
+    background: #4169b2;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        margin: 20px 15px;
+    }
+}
+
+.introduction {
+    background: white;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.introduction h2 {
+    text-align: center;
+    color: #253d72;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .introduction {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+}
+
+.labs {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.labs h2 {
+    color: #253d72;
+}
+
+.lab-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.lab-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.lab-card:hover {
+    transform: translateY(-5px);
+}
+
+.lab-card h3 {
+    color: #253d72;
+    font-size: 25px;
+}
+
+.lab-card h4 {
+    min-height: 45px;
+}
+
+.lab-card p {
+    line-height: 1.6;
+}
+
+.lab-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #253d72;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.lab-card a:hover {
+    background: #4169b2;
+}
+
+@media (max-width: 768px) {
+    .lab-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.knowledge {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.knowledge h2 {
+    color: #253d72;
+    text-align: center;
+}
+
+.knowledge-intro {
+    max-width: 850px;
+    margin: 15px auto 30px;
+    line-height: 1.7;
+}
+
+.knowledge-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.knowledge-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: left;
+    border-top: 5px solid #253d72;
+    transition: transform 0.3s;
+}
+
+.knowledge-card:hover {
+    transform: translateY(-5px);
+}
+
+.knowledge-card h3 {
+    color: #253d72;
+    line-height: 1.5;
+}
+
+.knowledge-card p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .knowledge-container {
+        grid-template-columns: 1fr;
+    }
+}
+
